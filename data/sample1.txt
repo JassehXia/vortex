@@ -1,0 +1,3 @@
+This is a sample text file about advanced search engines.
+Search engines use inverted indexes to map words to documents.
+Speed is critical for a good user experience.

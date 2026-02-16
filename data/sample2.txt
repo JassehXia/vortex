@@ -1,0 +1,3 @@
+C++ is a high-performance programming language.
+It is widely used for system programming and game development.
+C++20 introduced modules, concepts, and coroutines.

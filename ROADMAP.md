@@ -16,12 +16,12 @@ The project is divided into 5 distinct MVP stages to ensure incremental delivery
 
 ### Phase 1: MVP 1 (The Engine Room)
 **Goal:** Build the standalone C++ CLI tool that indexes a folder of `.txt` files and outputs a searchable binary file.
-- [ ] Set up C++20 project structure with CMake.
-- [ ] Implement file system scanner to read `.txt` files recursively.
-- [ ] Develop the Inverted Index data structure (Project `term` -> `file_id` + `frequency`).
-- [ ] Implement the `mmap` logic for writing/reading large index files to/from disk.
-- [ ] Create a CLI interface to accept a directory path and output index stats.
-- [ ] **Deliverable:** A compiled binary (`vortex-indexer`) that takes a folder path and successfully creates an index file.
+- [X] Set up C++20 project structure with CMake.
+- [X] Implement file system scanner to read `.txt` files recursively.
+- [X] Develop the Inverted Index data structure (Project `term` -> `file_id` + `frequency`).
+- [X] Implement the `mmap` logic for writing/reading large index files to/from disk.
+- [X] Create a CLI interface to accept a directory path and output index stats.
+- [X] **Deliverable:** A compiled binary (`vortex-indexer`) that takes a folder path and successfully creates an index file.
 
 ### Phase 2: MVP 2 (The Connectivity Bridge)
 **Goal:** Implement the pybind11 wrapper and verify that Python can query the C++ index in under 10ms.
