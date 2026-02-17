@@ -7,6 +7,12 @@
 },
 {
   "directory": "C:/Users/pohfe/OneDrive - The Ohio State University/Desktop/Coding Projects/vortex/build_cmake",
+  "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/vortex_indexer.dir/includes_CXX.rsp -std=gnu++20 -Wall -Wextra -Wpedantic -o CMakeFiles\\vortex_indexer.dir\\src\\bindings.cpp.obj -c \"C:\\Users\\pohfe\\OneDrive - The Ohio State University\\Desktop\\Coding Projects\\vortex\\src\\bindings.cpp\"",
+  "file": "C:/Users/pohfe/OneDrive - The Ohio State University/Desktop/Coding Projects/vortex/src/bindings.cpp",
+  "output": "CMakeFiles/vortex_indexer.dir/src/bindings.cpp.obj"
+},
+{
+  "directory": "C:/Users/pohfe/OneDrive - The Ohio State University/Desktop/Coding Projects/vortex/build_cmake",
   "command": "C:\\msys64\\ucrt64\\bin\\c++.exe  @CMakeFiles/vortex_indexer.dir/includes_CXX.rsp -std=gnu++20 -Wall -Wextra -Wpedantic -o CMakeFiles\\vortex_indexer.dir\\src\\main.cpp.obj -c \"C:\\Users\\pohfe\\OneDrive - The Ohio State University\\Desktop\\Coding Projects\\vortex\\src\\main.cpp\"",
   "file": "C:/Users/pohfe/OneDrive - The Ohio State University/Desktop/Coding Projects/vortex/src/main.cpp",
   "output": "CMakeFiles/vortex_indexer.dir/src/main.cpp.obj"

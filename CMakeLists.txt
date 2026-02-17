@@ -18,5 +18,22 @@ include_directories(include)
 # Source files
 file(GLOB_RECURSE SOURCES "src/*.cpp")
 
-# Executable
+# Standard Executable
 add_executable(vortex_indexer ${SOURCES})
+
+# --- Python Bindings (For IDE Support Only) ---
+# Check if Python and pybind11 are available
+find_package(Python3 COMPONENTS Interpreter Development)
+execute_process(COMMAND "${Python3_EXECUTABLE}" -m pybind11 --cmake
+                OUTPUT_VARIABLE pybind11_DIR
+                OUTPUT_STRIP_TRAILING_WHITESPACE)
+
+if (pybind11_DIR)
+    list(APPEND CMAKE_PREFIX_PATH "${pybind11_DIR}")
+    find_package(pybind11 CONFIG)
+    
+    if (pybind11_FOUND)
+        pybind11_add_module(vortex_python src/bindings.cpp src/InvertedIndex.cpp)
+        target_link_libraries(vortex_python PRIVATE vortex_indexer) # Link against main executable logic if static lib separated
+    endif()
+endif()

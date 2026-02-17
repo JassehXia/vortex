@@ -152,6 +152,30 @@ src/InvertedIndex.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\vortex_indexer.dir\build.make CMakeFiles/vortex_indexer.dir/src/InvertedIndex.cpp.s
 .PHONY : src/InvertedIndex.cpp.s
 
+src/bindings.obj: src/bindings.cpp.obj
+.PHONY : src/bindings.obj
+
+# target to build an object file
+src/bindings.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\vortex_indexer.dir\build.make CMakeFiles/vortex_indexer.dir/src/bindings.cpp.obj
+.PHONY : src/bindings.cpp.obj
+
+src/bindings.i: src/bindings.cpp.i
+.PHONY : src/bindings.i
+
+# target to preprocess a source file
+src/bindings.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\vortex_indexer.dir\build.make CMakeFiles/vortex_indexer.dir/src/bindings.cpp.i
+.PHONY : src/bindings.cpp.i
+
+src/bindings.s: src/bindings.cpp.s
+.PHONY : src/bindings.s
+
+# target to generate assembly for a file
+src/bindings.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\vortex_indexer.dir\build.make CMakeFiles/vortex_indexer.dir/src/bindings.cpp.s
+.PHONY : src/bindings.cpp.s
+
 src/main.obj: src/main.cpp.obj
 .PHONY : src/main.obj
 
@@ -188,6 +212,9 @@ help:
 	@echo ... src/InvertedIndex.obj
 	@echo ... src/InvertedIndex.i
 	@echo ... src/InvertedIndex.s
+	@echo ... src/bindings.obj
+	@echo ... src/bindings.i
+	@echo ... src/bindings.s
 	@echo ... src/main.obj
 	@echo ... src/main.i
 	@echo ... src/main.s

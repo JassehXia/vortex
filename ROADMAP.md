@@ -25,8 +25,8 @@ The project is divided into 5 distinct MVP stages to ensure incremental delivery
 
 ### Phase 2: MVP 2 (The Connectivity Bridge)
 **Goal:** Implement the pybind11 wrapper and verify that Python can query the C++ index in under 10ms.
-- [ ] create `setup.py` and configure pybind11 bindings.
-- [ ] Expose C++ `Index` class methods (`load_index`, `search`) to Python.
+- [X] create `setup.py` and configure pybind11 bindings.
+- [X] Expose C++ `Index` class methods (`load_index`, `search`) to Python.
 - [ ] Implement BM25 ranking algorithm within the C++ search logic.
 - [ ] Create a Python script to import the module, load the index, and run benchmark queries.
 - [ ] **Deliverable:** A Python script that prints search results from the C++ index with execution time < 10ms.
