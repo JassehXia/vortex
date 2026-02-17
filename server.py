@@ -1,10 +1,19 @@
 from fastapi import FastAPI, HTTPException
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from typing import List
 import vortex
 import os
 
 app = FastAPI(title="Vortex Search Engine")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"], # Allow all for MVP
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # --- Global State ---
 # In a real app, we might handle this more gracefully, but for MVP
